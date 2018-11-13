@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto-Bold';
+    src: url('../fonts/Roboto-Bold.ttf');
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto',sans-serif;
+}
+
+.btn:focus {
+	outline: none !important;
+}
+
+.form-control, .form-control:focus {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+.video_area {
+	margin: 15px 0 25px 0;
+}
+
+.camera_area {
+	position: relative;
+	font-size: 0;
+	margin-bottom: 15px;
+}
+
+.camera img {
+	height: 300px;
+	margin: auto;
+}
+
+.camera .top {
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	width: 20px;
+	height: 20px;
+	display: none;
+	border-top: 2px solid #29c371;
+	border-left: 2px solid #29c371;
+}
+
+.camera .bottom {
+	position: absolute;
+	right: 10px;
+	bottom: 10px;
+	width: 20px;
+	height: 20px;
+	display: none;
+	border-bottom: 2px solid #29c371;
+	border-right: 2px solid #29c371;
+}
+
+.btn.yellow_btn {
+	color: #fff;
+	background: #f1c40f;
+}
+
+.table-responsive {
+	margin-top: 30px;
+}
+
+.table_area {
+	margin-bottom: 20px;
+}
+
+.table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
+	padding: 10px 8px;
+}
+
+.table .edit {
+	color: #fff;
+	margin-right: 5px;
+	background: #f1c40f;
+}
+
+.table .delete {
+	color: #fff;
+	background: #e74c3c;
+}
+
+.btn.green_btn {
+	color: #fff;
+	background: #27ae60;
+}
+
+.video, video {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.video {
+	-moz-transform: scaleX(-1);
+	-webkit-transform: scaleX(-1);
+	-o-transform: scaleX(-1);
+	transform: scaleX(-1);
+	-ms-filter: fliph; /*IE*/
+	filter: fliph;
+}
+
+#results img {
+	margin: 0 auto;
+}
+
+.info {
+	display: none;
+	font-family: 'Roboto-Bold',sans-serif;
+}
+
+.mbottom {
+	margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 767px){
+	.take_snapshot,.ok,.open {
+		margin-bottom: 15px;
+	}
+}
